@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #6bcf63, #3b8d3b);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-btn {
+  background: #fff;
+  color: #6bcf63;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Section Styles */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+/* Scroll Animation */
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+[data-scroll].active {
+  opacity: 1;
+  transform: translateY(0);
+}
